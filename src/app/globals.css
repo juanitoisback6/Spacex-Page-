@@ -1,14 +1,4 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 html {
   height: 100%;
@@ -46,4 +36,42 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+header{
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(3, 3, 3, 0.66) 0%,rgba(0, 0, 0, 0.925) 50%, rgba(0, 0, 0, 1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.iconSPXheader{
+  height: 100%;
+}
+
+.hambuMenu{
+  justify-content: end;
+  margin-right: 20px;
+}
+
+.hambuMenu > img{
+  height: 35px;
+}
+
+.earthVideo{
+ position: relative;
+ top: 0;
+ left: 0;
+  
+ min-height: 100%;
+ width: auto;
+ height: 100vh;
+ object-fit: fill;
+ z-index: -1;
 }

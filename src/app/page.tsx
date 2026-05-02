@@ -1,3 +1,7 @@
+'use client'
+
+import CountDown from "@/Components/CountDown";
+
  
 export default function Home() {
 
@@ -22,6 +26,7 @@ export default function Home() {
     <a href="myVideo.mp4" download="myVideo.mp4">link to the video</a> instead.
   </p>
 </video>
+<CountDown date="2026-04-31T21:58:00" />
 
 
     </>

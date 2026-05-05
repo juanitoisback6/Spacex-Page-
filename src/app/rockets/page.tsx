@@ -49,7 +49,7 @@ return(
                              
                               
                     </div> 
-                     <img src="/steam.gif" alt="steam gif" />
+                   
           </div>
 </section>
           </>

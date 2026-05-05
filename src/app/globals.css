@@ -16,9 +16,7 @@ body {
   flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ font-family: "Play", sans-serif;
 }
 
 * {
@@ -71,7 +69,7 @@ header{
   
  min-height: 100%;
  width: auto;
- height: 100vh;
+ height: 100dvh;
  object-fit: fill;
  z-index: -1;
 }
@@ -83,8 +81,8 @@ header{
   
  min-height: 100%;
  width: auto;
- height: 100vh;
- object-fit: cover;
+ height: 100dvh;
+  object-fit: cover;
  z-index: -1;
 }
 
@@ -97,4 +95,85 @@ header{
   font-family: "Play", sans-serif;
   width: 80%;
   text-align: center;
+}
+
+.rocketTitle{
+   height: 90dvh;
+  position: absolute;
+ top: 200px;
+ right: 150px; 
+ font-size: 80px;
+ font-family: "Play", sans-serif;
+ text-shadow: 1px 10px 90px rgb(0, 0, 0);
+ animation: fadeInDown 3s ease-out forwards;
+}
+
+@keyframes fadeInDown {
+0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.canvaArt{
+  height: 90dvh;
+  position: absolute;
+ top: 55dvh;
+ right: -20px;  
+}
+
+.starcontainer{
+background: linear-gradient(0deg,rgba(0, 5, 5, 1) 0%, rgba(0, 0, 0, 0) 100%);
+display: flex;
+ 
+ 
+}
+ 
+.rocketInfoPart{
+  margin-top: 60dvh;
+  overflow: hidden;
+  position: relative;
+}
+
+.rocketInfoPart > h2{
+  width: 90%;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+  justify-content: center;
+}
+
+.description{
+  width: 90%;
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.rocketS{
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.rocketS >div >h2,p{
+  text-align: center;
+  
+}
+
+.rocketS >div >p{
+  margin-top: 20px;
+font-size: 30px;
+}
+
+.rocketInfoPart>img{
+  position: absolute;
+  top: 5%;
+  left: 10%;
+   
+   
 }

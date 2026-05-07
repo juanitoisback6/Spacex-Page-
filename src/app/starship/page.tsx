@@ -19,6 +19,7 @@ return(
 </video>
 
 <img className="canvaArt" src="/Vector2.png" alt="" />
+
 <h2 className="rocketTitle">STARSHIP</h2>
 <section className="starcontainer">
 
@@ -33,7 +34,9 @@ return(
           <div className="rocketInfoPart">
             
             <AnimarAlScroll>
-                    <h2 className="rocketInfoPartTittle">STARSHIP</h2>
+
+                    <h2 className="rocketInfoPartTittle"> STARSHIP </h2>
+                    
             </AnimarAlScroll>
 
             <AnimarAlScroll>

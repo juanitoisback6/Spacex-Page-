@@ -54,12 +54,54 @@ header{
 }
 
 .hambuMenu{
-  justify-content: end;
-  margin-right: 20px;
+   
+  margin-right: 20px !important;
+  all: unset;
+}
+.closeX{
+   margin-left: 60% !important;
+  all: unset;
+  cursor: pointer;
+  
+   
 }
 
 .hambuMenu > img{
   height: 35px;
+  cursor: pointer;
+}
+
+.menu-links{
+  list-style: none;
+}
+.submenu{
+  list-style: none;
+}
+.btnRockets{
+  cursor: pointer !important; 
+   all: unset;
+}
+
+.ocultar{
+  display: none;
+}
+
+.side-menu {
+  
+  position: fixed;
+  top: 0;
+  right: -100px;
+  width: 300px;  
+  height: 100vh;
+  background-color: #000;  
+  transform: translateX(100%);  
+  transition: transform 0.3s ease-in-out;  
+  z-index: 100;
+}
+
+.side-menu.open{
+    
+  transform: translateX(0);  
 }
 
 .earthVideo{
@@ -98,15 +140,15 @@ header{
 }
 
 .rocketTitle{
-   height: 90dvh;
-  position: absolute;
+ height: 90dvh;
+ position: absolute;
  top: 200px;
  right: 150px; 
  font-size: 80px;
  font-family: "Play", sans-serif;
  text-shadow: 1px 10px 90px rgb(255, 255, 255);
- animation-delay: 2s;
- animation: fadeInDown 3s  forwards;
+ opacity: 0;
+ animation: fadeInDown 3s 2s forwards;
 }
 
 @keyframes fadeInDown {
@@ -121,8 +163,8 @@ header{
 }
 
 .canvaArt{
-  height: 90dvh;
-  position: absolute;
+ height: 90dvh;
+ position: absolute;
  top: 55dvh;
  right: -20px;  
 }
@@ -139,21 +181,22 @@ display: flex;
  
 .rocketInfoPart{
   margin-top: 60dvh;
-  overflow: hidden;
+   
   position: relative;
    
 }
+ 
 
 .rocketInfoPartTittle{
+ 
   width: 90%;
-  font-size: 60px;
+  font-size: 5vw;
   text-align: center;
   margin-bottom: 60px;
   justify-content: center;
+
 }
  
-
-  
 
 
 .description{
@@ -199,8 +242,4 @@ font-size: 30px;
  
 .visible-al-scroll {
   animation: fadeInDown 1s ease-out forwards;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> dbfcf82b6d9d0cbbf84affc6af04b5badf4dbc9f

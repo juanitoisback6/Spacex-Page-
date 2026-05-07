@@ -15,7 +15,7 @@ export default function AnimarAlScroll({ children }) {
           setIsVisible(false);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.5 }
     );
 
     if (elementoRef.current) {

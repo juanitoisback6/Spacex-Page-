@@ -1,27 +1,53 @@
  'use client'
 
 import Link from "next/link"
+import { useState } from "react"
 
 
 
 export default function Header (){
 
+const [menu,setMenu]=useState(false);
+
+const [rocketsMenu, setRocketsMenu]=useState(false);
+
 return(
    <>
            <header>
-                    <Link className="iconSPXheader" href="#">
+                    <Link className="iconSPXheader" href="/">
                      <img 
                      className="iconSPXheader" 
                      src='/spacexsvg.svg' 
                      alt="SpaceX icon" />
                     </Link>
                     
-                    
-                    <Link className="hambuMenu" href="#">
+                    <button className="hambuMenu">
                      <img 
+                     onClick={()=>{setMenu(!menu)}}
                      src="/icons8-menú.svg" 
                      alt="Hamburguer menu icon" />
-                     </Link>
+                    </button>
+
+                    <nav className={`side-menu ${menu ? 'open' : ''} `}>
+                     
+                     <ul className="menu-links">
+                        <li>
+            <button className="closeX" onClick={() => setMenu(false)}>X </button>
+          </li>
+                        <li> <Link href="#">Upcoming Launches </Link></li> 
+                        <button className="btnRockets" onClick={()=>{setRocketsMenu(!rocketsMenu)}}>   Rockets {rocketsMenu ? '▲' : '▼'} </button>
+                        <ul className={`submenu ${rocketsMenu ? 'mostrar' : 'ocultar'}`}>
+                        <li><Link href="#">Falcon 9</Link></li>
+                        <li><Link href="#">Falcon Heavy</Link></li>
+                        <li><Link href="/starship">Starship</Link></li>
+                        </ul>
+
+
+                        <li> <Link href="#"> Launchpads </Link></li>
+                        <li> <Link href="#"> Ships</Link></li>
+                        <li> <Link href="#"> Past Launches</Link></li>
+                     </ul>
+                     </nav> 
           </header>
    </>
 )

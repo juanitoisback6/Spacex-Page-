@@ -243,3 +243,22 @@ font-size: 30px;
 .visible-al-scroll {
   animation: fadeInDown 1s ease-out forwards;
 }
+
+.titleLPDS{
+  width: 100%;
+  height: 20dvh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleLPDS>h2{
+   
+  font-size: 5dvw;
+}
+
+.imglaunchpads{
+  width: 100%;
+  height: calc(100dvh - 20dvh);
+}

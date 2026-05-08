@@ -43,7 +43,7 @@ return(
                         </ul>
 
 
-                        <li> <Link href="#"> Launchpads </Link></li>
+                        <li> <Link href="/launchpads"> Launchpads </Link></li>
                         <li> <Link href="#"> Ships</Link></li>
                         <li> <Link href="#"> Past Launches</Link></li>
                      </ul>

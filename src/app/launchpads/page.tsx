@@ -14,10 +14,10 @@ export default function LaunchPads (){
            <section className="sectionLPDS">
                     <Image
                     className="imglaunchpads"
-                    src="/launchpads.png"
+                    src="launchpadcover.svg"
                     alt="Launchpads image"
                     width= {1100} 
-                    height={1100}
+                    height={1200}
                     />
            </section>
             <section className="sectionLPDSSBTX">

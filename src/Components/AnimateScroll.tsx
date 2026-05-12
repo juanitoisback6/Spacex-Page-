@@ -1,10 +1,14 @@
 'use client'
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState, ReactNode } from "react"
 
+interface AnimarAlScrollProps {
+  children: ReactNode;
+}
  
-export default function AnimarAlScroll({ children }) {
+ 
+export default function AnimarAlScroll({ children }: AnimarAlScrollProps) {
   const [isVisible, setIsVisible] = useState(false);
-  const elementoRef = useRef(null);
+  const elementoRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -30,7 +34,6 @@ export default function AnimarAlScroll({ children }) {
   }, []);
 
 
-  // Renderizamos un div invisible que envuelve al contenido real
   return (
     <div 
       ref={elementoRef} 

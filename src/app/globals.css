@@ -304,15 +304,19 @@ left: 60%;
  
 color: #000000;
 font-size: 6dvh; 
+<<<<<<< HEAD
 background-color: white;
 padding: 20px; 
 width: 500px;
+=======
+>>>>>>> 858824d6e7783f88e8d3f10fded9520d33ad56c4
  }
  .sectionLPDSSBTX>p{
   background-color: #000;
 position: absolute;
 top: 70%;
 left: 10%;
+<<<<<<< HEAD
  
 text-align: justify;
  color: #000;
@@ -320,6 +324,13 @@ font-size: 2dvh;
 background-color: white;
 padding: 20px; 
 width: 500px;
+=======
+padding: 20px; 
+width: 500px;
+text-align: justify;
+color: #ffffff;
+font-size: 2dvh; 
+>>>>>>> 858824d6e7783f88e8d3f10fded9520d33ad56c4
  }
 
  .imglaunchpadstarbase{
@@ -397,4 +408,8 @@ width: 500px;
 text-align: justify;
  
 font-size: 2dvh;
+<<<<<<< HEAD
  }
+=======
+ }
+>>>>>>> 858824d6e7783f88e8d3f10fded9520d33ad56c4

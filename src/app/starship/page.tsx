@@ -12,7 +12,7 @@ return(
     muted 
     loop>
    
-  <source src="/Starshiplanding2.mp4" type="video/mp4" />
+  <source src="/Starshiplanding.mp4" type="video/mp4" />
   <p>
     Your browser doesn't support HTML video.  
   </p>
@@ -21,6 +21,7 @@ return(
 <img className="canvaArt" src="/Vector2.png" alt="" />
 
 <h2 className="rocketTitle">STARSHIP</h2>
+
 <section className="starcontainer">
 
           <div className="rocketPartimg">
